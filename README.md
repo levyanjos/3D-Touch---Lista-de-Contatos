@@ -34,7 +34,7 @@ Código de exemplo (`ViewController.swift`, ln 60)
   UIApplication.shared.shortcutItems = [shortcutItem]
 ````
 
-### Peek and Pop
+## Peek and Pop
 
 É outra forma de interação com o seu App respondendo a pressão. O processo ocorre em três partes:
 1. Ao pressionar, é indicado ao usuário que o *preview* está disponível. Ao redor do elemento que está sendo pressionado fica desfocado.
@@ -59,7 +59,7 @@ Esse é chamado para preparar a *view* que será apresentada na etapa do *Pop*.
 
 Toda essa parte está exemplificada e comentada no arquivo `ViewController.swift` a partir da linha 128.
 
-#### Peek Quick Actions
+### Peek Quick Actions
 
 Nesse caso, tudo deve ser feito na view que será apresentada após o *peek* (no caso do exemplo na `ContatoViewController.swift`). Basicamente é necessário criar objetos da classe `UIPreviewActionItem`, e defini-las na propriedade padrão `UIViewController.previewActionItems`. Na aplicação de exemplo, essa parte está demostrada no arquivo `ContatoViewController.swift`, a partir da linha 22.
 
